@@ -1,0 +1,45 @@
+<DOCTYPE! html>
+<html>
+<head>
+<meta charset="UTF_8"/>
+
+<script type="text/javascript">
+    function aktifYap(x){
+	    document.getElementById("butonum").disabled=false;
+		
+	}
+	function pasifYap(x){
+	    document.getElementById("butonum").disabled=true;
+    }
+
+</script>
+
+</head>
+<body>
+
+<button id="butonum">AKTİF/PASİF</button>
+<input type="button" id="btn_aktif_yapan" value="AKTİF YAP" onclick="aktifYap();"/>
+<input type="button" id="btn_pasif_yapan" value="PASİF YAP" onclick="pasifYap();"/>
+
+<form action="mailGonder.php" method="POST">
+      
+    <input id="isim" type="text" placeholder="isminizi giriniz"></input><br><br>
+	<input id="soyisim" type="text" placeholder="soy isminizi giriniz"></input> <br><br>
+    <textarea id="mesaj" type="text" placeholder="mesajınızı giriniz"></textarea>
+
+    <button type="reset" value="reset">TEMİZLE</button>
+    <button id="gonder" type="submit" value="submit"> GÖNDER </button>	
+
+
+</form>
+
+<fieldset>
+
+    <legend> Şifereyi giriniz </legend>
+	<b>Şifre: </b><input type="text"></input>
+	<button>onayla</button>
+
+</fieldset>
+
+</body>
+</html>
