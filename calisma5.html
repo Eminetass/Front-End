@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasarım Kodlama</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            font-size:62.5%;
+        }
+        body{
+            min-height: 100vh;
+            margin:0;
+            padding:0;
+            background: url(cimen.png) bottom repeat-x,
+                        url(bulut.png) fixed,
+                        #1DABB8;
+        }
+        .kapsayici{
+            width: 1080px;
+            margin:auto;
+            /* min-height: 100px;
+            background-color: red; */
+        }
+
+        header{
+            margin-top:300px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        header .menu li,
+        header .sosyal li{
+            display: inline-block;
+        }
+
+        header ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+
+        .menu a{
+            display: block;
+            background-color: #25373D;
+            color:#fff;
+            padding:15px 30px;
+            font-size:2rem;
+            text-decoration: none;
+        }
+
+        .menu a:hover{
+            background-color: #D2D7D3;
+            color:#25373D;
+        }
+
+        .sosyal a{
+            display: block;
+            background-color: #FEC606;
+            color:#25373D;
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            text-align: center;
+            font-size:2rem;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        .sosyal a:hover{
+            background-color: #D8335B;
+            color:#fff;
+        }
+
+        .bolum1{
+            background-color: #D2D7D3;
+            margin-bottom:30px;
+        }
+        .bolum1 img{
+            width: 100%;
+            display: block;
+        }
+
+        .bolum2{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+            background-color: #D2D7D3;
+            min-height: 50px;
+            padding:25px;
+            margin-bottom:30px;
+        }
+
+        .bolum2 .kutu{
+            font-size:5rem;
+            color:#fff;
+            width: 330px;
+            height: 330px;
+            background-color: #D8335B;
+        }
+
+        .bolum3{
+            display: flex;
+            background-color: #D2D7D3;
+            justify-content: space-between;
+            padding:10px;
+        }
+
+        .bolum3 .kutu{
+            width: 200px;
+            height: 200px;
+            background-color: #D8335B;
+            font-size:5rem;
+            color:#fff;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="kapsayici">
+    <header>
+        <ul class="menu">
+            <li><a href="#">sayfa</a></li>
+            <li><a href="#">sayfa</a></li>
+            <li><a href="#">sayfa</a></li>
+            <li><a href="#">sayfa</a></li>
+            <li><a href="#">sayfa</a></li>
+        </ul>
+        <ul class="sosyal">
+            <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitch"></i></a></li>
+        </ul>
+    </header>
+    <section class="bolum1">
+        <img src="iki-dusun-bir-kodla.jpg" alt="Arkaplan">
+    </section>
+    <section class="bolum2">
+        <div class="kutu">1</div>
+        <div class="kutu">2</div>
+        <div class="kutu">3</div>
+        <div class="kutu">4</div>
+        <div class="kutu">5</div>
+        <div class="kutu">6</div>
+    </section>
+    <section class="bolum3">
+        <div class="kutu">1</div>
+        <div class="kutu">2</div>
+        <div class="kutu">3</div>
+        <div class="kutu">4</div>
+        <div class="kutu">5</div>
+    </section>
+</div>
+    
+</body>
+</html>
