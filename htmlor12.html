@@ -1,0 +1,107 @@
+<DOCTYPE! html>
+<html>
+<head>
+<meta charset="UTF_8"/>
+
+<script type="text/javascript">
+    function aktifYap(x){
+	    document.getElementById("butonum").disabled=false;
+		
+	}
+	function pasifYap(x){
+	    document.getElementById("butonum").disabled=true;
+    }
+
+</script>
+
+</head>
+<body>
+
+<button id="butonum">AKTİF/PASİF</button>
+<input type="button" id="btn_aktif_yapan" value="AKTİF YAP" onclick="aktifYap();"/>
+<input type="button" id="btn_pasif_yapan" value="PASİF YAP" onclick="pasifYap();"/>
+
+<form action="mailGonder.php" method="POST">
+      
+    <input id="isim" type="text" placeholder="isminizi giriniz"></input><br><br>
+	<input id="soyisim" type="text" placeholder="soy isminizi giriniz"></input> <br><br>
+    <textarea id="mesaj" type="text" placeholder="mesajınızı giriniz"></textarea>
+
+    <button type="reset" value="reset">TEMİZLE</button>
+    <button id="gonder" type="submit" value="submit"> GÖNDER </button>	
+
+
+</form>
+
+<br>
+<p>*********************ORNEK2*************************************************************************************************</p>
+<br>
+
+
+<fieldset>
+
+    <legend> Şifereyi giriniz </legend>
+	<b>Şifre: </b><input type="text"></input>
+	<button>onayla</button>
+
+</fieldset>
+
+
+<br>
+<p>*********************ORNEK3*************************************************************************************************</p>
+<br>
+
+
+<datalist id="renk-listesi">
+    <option value="Mavi"/>
+	<option value="Mor"/>
+	<option value="Yeşil"/>
+	<option value="Kırmızı"/>
+	<option value="Sarı"/>
+</datalist>
+<input name="renkler" list="renk-listesi"/><br>
+
+
+
+<br>
+<p>*********************ORNEK4*************************************************************************************************</p>
+<br>
+
+
+<select>
+    <option value="genc" selected>18-40</option>
+    <option value="ortayas">40-60</option>
+	<option value="ihtiyar">60-75</option>
+	<option value="yaslı">75+</option>
+</select>
+
+
+<br>
+<p>*********************ORNEK5*************************************************************************************************</p>
+<br>
+
+
+<select>
+    <optgroup label="meyveler">
+	    <option value="elma">Elma</option>
+		<option value="armut">Armut</option>
+	</optgroup>
+    
+	<optgroup label="sebzeler">
+        <option value="patetes">Patetes</option>
+		<option value="pırasa">Pırasa</option>
+    </optgroup>
+    
+</select>
+
+<br>
+<p>*********************ORNEK6*************************************************************************************************</p>
+<br>
+  
+<meter min="0" max="100" value="70"></meter>
+<meter value="0.8"></meter>  
+  
+
+
+</body>
+</html>
